@@ -1,0 +1,40 @@
+<h1>Editing training_unit</h1>
+
+<% form_for(@training_unit) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :begin %><br />
+    <%= f.datetime_select :begin %>
+  </p>
+  <p>
+    <%= f.label :duration_h %><br />
+    <%= f.text_field :duration_h %>
+  </p>
+  <p>
+    <%= f.label :duration_m %><br />
+    <%= f.text_field :duration_m %>
+  </p>
+  <p>
+    <%= f.label :distance %><br />
+    <%= f.text_field :distance %>
+  </p>
+  <p>
+    <%= f.label :tempo %><br />
+    <%= f.text_field :tempo %>
+  </p>
+  <p>
+    <%= f.label :route %><br />
+    <%= f.text_area :route %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @training_unit %> |
+<%= link_to 'Back', training_units_path %>

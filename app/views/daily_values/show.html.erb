@@ -1,0 +1,18 @@
+<p>
+  <b>Id:</b>
+  <%=h @daily_values.id %>
+</p>
+
+<p>
+  <b>Day time:</b>
+  <%=h @daily_values.day_time %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%=h @daily_values.weight %>
+</p>
+
+
+<%= link_to 'Edit', edit_daily_values_path(@daily_values) %> |
+<%= link_to 'Back', daily_values_path %>

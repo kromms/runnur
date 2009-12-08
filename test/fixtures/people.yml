@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  name: MyText
+  firstname: MyText
+  day_of_birth: 2009-11-21
+  height: 9.99
+  alias: MyText
+
+two:
+  id: 1
+  name: MyText
+  firstname: MyText
+  day_of_birth: 2009-11-21
+  height: 9.99
+  alias: MyText

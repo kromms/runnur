@@ -1,0 +1,32 @@
+<h1>Listing training_units</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Begin</th>
+    <th>Duration h</th>
+    <th>Duration m</th>
+    <th>Distance</th>
+    <th>Tempo</th>
+    <th>Route</th>
+  </tr>
+
+<% @training_units.each do |training_unit| %>
+  <tr>
+    <td><%=h training_unit.id %></td>
+    <td><%=h training_unit.begin %></td>
+    <td><%=h training_unit.duration_h %></td>
+    <td><%=h training_unit.duration_m %></td>
+    <td><%=h training_unit.distance %></td>
+    <td><%=h training_unit.tempo %></td>
+    <td><%=h training_unit.route %></td>
+    <td><%= link_to 'Show', training_unit %></td>
+    <td><%= link_to 'Edit', edit_training_unit_path(training_unit) %></td>
+    <td><%= link_to 'Destroy', training_unit, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New training_unit', new_training_unit_path %>

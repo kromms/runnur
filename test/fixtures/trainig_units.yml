@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  begin: 2009-11-21 15:19:21
+  duration_h: 1
+  duration_m: 1
+  distance: 9.99
+  tempo: 9.99
+  route: MyText
+
+two:
+  id: 1
+  begin: 2009-11-21 15:19:21
+  duration_h: 1
+  duration_m: 1
+  distance: 9.99
+  tempo: 9.99
+  route: MyText

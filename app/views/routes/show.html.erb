@@ -1,0 +1,23 @@
+<p>
+  <b>Id:</b>
+  <%=h @route.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @route.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @route.description %>
+</p>
+
+<p>
+  <b>Gpsies:</b>
+  <%=h @route.gpsies_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>

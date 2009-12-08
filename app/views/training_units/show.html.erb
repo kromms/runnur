@@ -1,0 +1,38 @@
+<p>
+  <b>Id:</b>
+  <%=h @training_unit.id %>
+</p>
+
+<p>
+  <b>Begin:</b>
+  <%=h @training_unit.begin %>
+</p>
+
+<p>
+  <b>Duration h:</b>
+  <%=h @training_unit.duration_h %>
+</p>
+
+<p>
+  <b>Duration m:</b>
+  <%=h @training_unit.duration_m %>
+</p>
+
+<p>
+  <b>Distance:</b>
+  <%=h @training_unit.distance %>
+</p>
+
+<p>
+  <b>Tempo:</b>
+  <%=h @training_unit.tempo %>
+</p>
+
+<p>
+  <b>Route:</b>
+  <%=h @training_unit.route %>
+</p>
+
+
+<%= link_to 'Edit', edit_training_unit_path(@training_unit) %> |
+<%= link_to 'Back', training_units_path %>

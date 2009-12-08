@@ -1,0 +1,24 @@
+<h1>Editing daily_values</h1>
+
+<% form_for(@daily_values) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :day_time %><br />
+    <%= f.datetime_select :day_time %>
+  </p>
+  <p>
+    <%= f.label :weight %><br />
+    <%= f.text_field :weight %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @daily_values %> |
+<%= link_to 'Back', daily_values_path %>
